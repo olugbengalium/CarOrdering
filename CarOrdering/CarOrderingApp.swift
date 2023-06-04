@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct CarOrderingApp: App {
+    @StateObject private var order = OrderViewModel()
     var body: some Scene {
         WindowGroup {
+//            LoginView()
+//            FormsView()
+
+//            CarDetailView()
             ContentView()
+//            CompleteOrderView()
+                .environmentObject(order)
         }
     }
 }
